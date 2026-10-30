@@ -213,11 +213,11 @@ function introMarkup(p){
 function startProjectIntro(p){
  const intro=document.querySelector('.project-intro'),stage=document.querySelector('.cinema-stage');
  if(!intro||!stage)return;
- if(p.id==='ai-film')stage.closest('article').querySelector('.detail-note span').textContent='영상 가운데 재생 버튼을 눌러 시청해 주세요.';
+ if(p.id==='ai-film')stage.closest('article').querySelector('.detail-note span').textContent='자동 재생은 음소거로 시작합니다. 소리는 플레이어에서 켜 주세요.';
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  let finished=false;
  const finish=()=>{if(finished)return;finished=true;clearTimeout(introTimer);intro.classList.add('leaving');
-  const frame=stage.querySelector('iframe[data-src]');if(frame){frame.src=frame.dataset.src+(p.id==='ai-film'?'':(reduced?'?playsinline=1':'?autoplay=1&mute=1&playsinline=1'));frame.removeAttribute('data-src')}
+  const frame=stage.querySelector('iframe[data-src]');if(frame){frame.src=frame.dataset.src+(reduced?'?playsinline=1':'?autoplay=1&mute=1&playsinline=1');frame.removeAttribute('data-src')}
   introCleanup=setTimeout(()=>intro.remove(),reduced?0:(p.id==="drama-title"?220:325));
  };
  intro.querySelector('.intro-skip').onclick=finish;
