@@ -61,3 +61,5 @@ body:not(.dark) .logo::after {
 .youtube-cover:focus-visible{outline:2px solid #fff;outline-offset:-4px}
 
 .intro-choose-me-ep1 .intro-title{padding-inline:4%}
+.intro-choose-me-ep1 .intro-line:last-child{letter-spacing:normal}
+.intro-choose-me-ep1 .intro-line:last-child .intro-mask{overflow:visible}
