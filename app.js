@@ -212,7 +212,7 @@ let introTimer, introCleanup;
 function introMarkup(p){
  const lines=p.introLines||(p.id==='drama-title'?['참교육']:p.id==='ai-film'?['지진안전','AI 공모전']:['기쁨, 슬픔,','아름다운 마음']);
  let index=0;
- return '<div class="project-intro intro-'+(p.introStyle||p.id)+'"><div class="intro-top"><span>EJ / SELECTED WORK</span><button type="button" class="intro-skip">영상 바로 보기 ↘</button></div><div class="intro-title" aria-label="'+p.title+'">'+lines.map(line=>'<div class="intro-line" aria-hidden="true">'+[...line].map(char=>'<span class="intro-mask"><span class="intro-letter" style="--i:'+index+++'">'+(char===' '?'&nbsp;':char)+'</span></span>').join('')+'</div>').join('')+'</div><div class="intro-bottom"><span>'+p.category+'</span><span>0'+(projects.indexOf(p)+1)+' / 0'+projects.length+'</span></div></div>';
+ return '<div class="project-intro intro-'+p.id+(p.introStyle?' intro-'+p.introStyle:'')+'"><div class="intro-top"><span>EJ / SELECTED WORK</span><button type="button" class="intro-skip">영상 바로 보기 ↘</button></div><div class="intro-title" aria-label="'+p.title+'">'+lines.map(line=>'<div class="intro-line" aria-hidden="true">'+[...line].map(char=>'<span class="intro-mask"><span class="intro-letter" style="--i:'+index+++'">'+(char===' '?'&nbsp;':char)+'</span></span>').join('')+'</div>').join('')+'</div><div class="intro-bottom"><span>'+p.category+'</span><span>0'+(projects.indexOf(p)+1)+' / 0'+projects.length+'</span></div></div>';
 }
 function startProjectIntro(p){
  const intro=document.querySelector('.project-intro'),stage=document.querySelector('.cinema-stage');

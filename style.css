@@ -59,3 +59,5 @@ body:not(.dark) .logo::after {
 .youtube-cover span{position:relative;padding:14px 20px;border-radius:4px;background:#181916;color:#fff}
 .youtube-cover:hover span,.youtube-cover:focus-visible span{background:#333}
 .youtube-cover:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+
+.intro-choose-me-ep1 .intro-title{padding-inline:4%}
