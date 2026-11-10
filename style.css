@@ -65,6 +65,6 @@ body:not(.dark) .logo::after {
 .intro-choose-me-ep1 .intro-line:last-child .intro-mask{overflow:visible}
 
 .intro-i-had-parents-too{container-type:inline-size}
-.intro-i-had-parents-too .intro-title{padding-inline:4%;font-size:clamp(20px,10cqw,136px);letter-spacing:normal}
-.intro-i-had-parents-too .intro-line:nth-child(2){justify-content:center}
+.intro-i-had-parents-too .intro-title{padding-inline:4%;font-size:min(8.2cqw,136px);letter-spacing:normal}
+.intro-i-had-parents-too .intro-line{justify-content:center}
 .intro-i-had-parents-too .intro-mask{overflow:visible}
