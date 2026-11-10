@@ -63,3 +63,6 @@ body:not(.dark) .logo::after {
 .intro-choose-me-ep1 .intro-title{padding-inline:4%}
 .intro-choose-me-ep1 .intro-line:last-child{letter-spacing:normal}
 .intro-choose-me-ep1 .intro-line:last-child .intro-mask{overflow:visible}
+
+.intro-i-had-parents-too .intro-title{padding-inline:4%;font-size:clamp(20px,7.3vw,112px);letter-spacing:normal}
+.intro-i-had-parents-too .intro-mask{overflow:visible}
