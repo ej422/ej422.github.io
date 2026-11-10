@@ -53,3 +53,9 @@ body:not(.dark) .logo::after {
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: reduce) {
     .logo:hover::after { opacity: var(--shine-reduced-opacity, .35); }
 }
+
+.youtube-cover{position:relative;display:grid;place-items:center;width:100%;height:100%;background:#000}
+.youtube-cover img{position:absolute;width:100%;height:100%;object-fit:contain}
+.youtube-cover span{position:relative;padding:14px 20px;border-radius:4px;background:#181916;color:#fff}
+.youtube-cover:hover span,.youtube-cover:focus-visible span{background:#333}
+.youtube-cover:focus-visible{outline:2px solid #fff;outline-offset:-4px}
