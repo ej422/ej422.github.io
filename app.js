@@ -1,6 +1,6 @@
 const projects=[{"id":"drama-title","title":"참교육","video":"w1jaPouVebc","category":"Motion / Title Sequence","sub":"드라마타이틀","style":"drama","art":"TITLE","small":"A STORY BEGINS","description":"「참교육」 드라마타이틀 제작 실습 영상입니다\n에프터이펙트로 제작하였습니다.","overviewTitle":"드라마 &lt;참교육&gt; 타이틀"},{"id":"ai-film","title":"지진안전 AI공모전","video":"Ae-iBxDwNfI","vertical":true,"category":"AI / Promotional Film","sub":"AI 홍보영상 · Shorts","style":"ai","art":"IMAGINE.","small":"IDEA INTO MOTION","description":"지진안전을 주제로 한 AI 영상입니다.\n행정안전부에서 주최한 지진안전 AI공모전에\n팀작업으로 출품한 작품으로, 장려상을 수상했습니다.","overviewTitle":"행정안전부 지진안전 AI공모전"},{"id":"music-video","title":"기쁨, 슬픔, 아름다운 마음","video":"BQVcTFw7k4Q","category":"Film / Music Video","sub":"AKMU × 이터널 선샤인 · 뮤직비디오 편집","style":"music","art":"MUSIC<br>VIDEO","small":"RHYTHM · VISUAL · STORY","description":"악동뮤지션의 「기쁨, 슬픔, 아름다운 마음」과 영화 「이터널 선샤인」을 연결한 가사 영상입니다.\n프리미어프로로 편집했습니다.","overviewTitle":"기쁨, 슬픔, 아름다운 마음 MV"},
  {"id":"i-had-parents-too","title":"나도 엄마 아빠가 있었다","video":"NpywuMMRNRg","category":"AI / Story Film","sub":"보육시설에서 자란 대기업 직장인의 사연","description":"인터넷에 공개된 사연을 각색해 만든 AI 영상입니다.","youtubeOnly":true},
- {"id":"choose-me-ep1","title":"날 선택해 줘 M/V EP.1","video":"Jug1DNUpZoQ","category":"Film / Music Video","sub":"조회수가 계급인 더러운 세상 · SF 드라마 뮤직비디오","description":"조회수가 고민인 유튜버의 이야기를 SF 드라마와 뮤직비디오로 풀어낸 작품입니다.","youtubeOnly":true,"thumbnail":"thumb-Jug1DNUpZoQ.avif"}
+ {"id":"choose-me-ep1","title":"날 선택해 줘 M/V EP.1","video":"jgrYoFFZbEc","category":"Film / Music Video","sub":"조회수가 계급인 더러운 세상 · SF 드라마 뮤직비디오","description":"조회수가 고민인 유튜버의 이야기를 SF 드라마와 뮤직비디오로 풀어낸 작품입니다.","thumbnail":"thumb-Jug1DNUpZoQ.avif","introLines":["날 선택해 줘","M/V EP.1"],"introStyle":"music-video"}
 ];
 let selected=0;const main=document.querySelector('main'),markers=document.querySelector('.markers');
 function thumbnail(p){return p.thumbnail||`thumb-${p.video}.jpg`;}
@@ -210,9 +210,9 @@ function toolbar(label){return `<div class="toolbar"><a href="#work">↖ All wor
 
 let introTimer, introCleanup;
 function introMarkup(p){
- const lines=p.id==='drama-title'?['참교육']:p.id==='ai-film'?['지진안전','AI 공모전']:['기쁨, 슬픔,','아름다운 마음'];
+ const lines=p.introLines||(p.id==='drama-title'?['참교육']:p.id==='ai-film'?['지진안전','AI 공모전']:['기쁨, 슬픔,','아름다운 마음']);
  let index=0;
- return '<div class="project-intro intro-'+p.id+'"><div class="intro-top"><span>EJ / SELECTED WORK</span><button type="button" class="intro-skip">영상 바로 보기 ↘</button></div><div class="intro-title" aria-label="'+p.title+'">'+lines.map(line=>'<div class="intro-line" aria-hidden="true">'+[...line].map(char=>'<span class="intro-mask"><span class="intro-letter" style="--i:'+index+++'">'+(char===' '?'&nbsp;':char)+'</span></span>').join('')+'</div>').join('')+'</div><div class="intro-bottom"><span>'+p.category+'</span><span>0'+(projects.indexOf(p)+1)+' / 0'+projects.length+'</span></div></div>';
+ return '<div class="project-intro intro-'+(p.introStyle||p.id)+'"><div class="intro-top"><span>EJ / SELECTED WORK</span><button type="button" class="intro-skip">영상 바로 보기 ↘</button></div><div class="intro-title" aria-label="'+p.title+'">'+lines.map(line=>'<div class="intro-line" aria-hidden="true">'+[...line].map(char=>'<span class="intro-mask"><span class="intro-letter" style="--i:'+index+++'">'+(char===' '?'&nbsp;':char)+'</span></span>').join('')+'</div>').join('')+'</div><div class="intro-bottom"><span>'+p.category+'</span><span>0'+(projects.indexOf(p)+1)+' / 0'+projects.length+'</span></div></div>';
 }
 function startProjectIntro(p){
  const intro=document.querySelector('.project-intro'),stage=document.querySelector('.cinema-stage');
