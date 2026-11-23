@@ -1,0 +1,337 @@
+[G4 · VOCAL CHORUS · Main Account · One Continuous Arc-In Shot · Studio Version]
+
+Reference upload order:
+<<<image_14>>> = S01_정면_낮
+<<<image_15>>> = S03_측면_낮 (세팅판)
+<<<image_16>>> = 보컬 캐릭터시트
+<<<image_4>>> = 레스폴
+<<<image_13>>> = 기타리스트시트
+<<<image_6>>> = 스트랫
+<<<image_7>>> = 베이시스트 캐릭터시트
+<<<image_8>>> = P베이스
+<<<image_9>>> = 베이시스트 얼굴 참고 이미지
+<<<image_10>>> = 드러머시트
+<<<image_11>>> = 드럼스틱
+<<<image_12>>> = 네 명의 캐릭터 비율 참고 이미지
+<<<audio_1>>> = 해당 가사 구간 참조음원
+
+Generation length: 7.68 seconds (16:9).
+One continuous shot, no internal cuts.
+Real-time speed throughout.
+
+
+SCENE CONTEXT
+
+Daytime inside a quiet industrial loft studio with tall factory windows.
+
+A four-piece rock band plays on a rug-covered set. The vocalist, a young man singing and playing rhythm guitar, performs the chorus:
+
+"그러니까 걱정 말아요, 나 잘 살아갈 거예요."
+
+Having lost his parents during childhood, he sings with quiet sincerity, thinking of the words he has always wanted to tell them.
+
+He wants them to know that he is doing well and will continue living a good life.
+
+He sings facing forward, looking ahead beyond the microphone rather than at the moving camera.
+
+The camera gradually arcs from his left side toward his front. Only after the camera completes its movement does he look directly into the lens to deliver his final promise.
+
+The shot ends in a near-frontal, slightly low-angle medium close-up.
+
+
+ACTIVE REFERENCES
+
+<<<image_14>>>: the studio from the front with the band equipment set up: tall factory windows on the left, the steel mezzanine and its central window behind, the metal staircase on the right, enamel pendant lamps, the drum kit on a rug-draped riser at the back center, the Marshall half stack on the left, the bass amplifier stack on the right, the microphone on a stand on the front Persian rug, soft overcast slate-blue daylight. This exact place, layout and light.
+
+<<<image_15>>>: the same studio from the side, the microphone on its stand on the Persian rug, the Marshall stack behind it, the metal staircase and the far wall with a caged wall lamp. This exact place and light.
+
+<<<image_16>>>: the vocalist, around 30, lean build, short neat black hair, black long-sleeve shirt with rolled sleeves, black slacks, thin silver chain. 100% matches the reference.
+
+<<<image_4>>>: his Gibson Les Paul Standard, tobacco sunburst, on a black strap. 100% matches the reference.
+
+<<<image_13>>>: the guitarist, early 20s, bleached blond messy hair, dark red paisley shirt open over a white tank top. 100% matches the reference.
+
+<<<image_6>>>: his white Fender Stratocaster. 100% matches the reference.
+
+<<<image_7>>>: the bassist's body, build, hairstyle, outfit and overall character sheet reference. Early 20s, black hair with long fringe, black denim jacket. 100% matches the reference.
+
+<<<image_8>>>: his black Fender Precision Bass with four strings. 100% matches the reference.
+
+<<<image_9>>>: the bassist's facial identity reference. His face, facial proportions, eyes, nose, lips, jawline and distinctive facial features must match this image exactly. This is the highest-priority reference for the bassist's face.
+
+<<<image_10>>>: the drummer, about 30, shaved head, thin dark-lens sunglasses, black suit over a black shirt. 100% matches the reference.
+
+<<<image_11>>>: the drummer's wooden drumsticks. He holds one in each hand throughout the performance. The drumsticks match this reference.
+
+<<<image_12>>>: the four band members' physical proportions and relative heights. Preserve their exact relative height, build, body proportions and size relationships. This reference controls their physical proportions, not their individual facial identity or outfits.
+
+<<<audio_1>>>: the reference audio; the vocalist's singing, rhythm guitar playing and the band's performance follow it exactly.
+
+
+LOCATION MAP
+
+The vocalist stands at the microphone on the front Persian rug.
+
+Behind him, soft and out of focus: the guitarist on the left in front of the Marshall stack, the bassist on the right in front of the bass amplifier stack, and the drummer behind the kit on the rug-draped riser.
+
+The tall factory windows are on the studio's left side. Their soft daylight falls across the vocalist's face, while warm pendant lamps glow above and behind the band.
+
+The camera begins on the audience side of the microphone, 45° off the vocalist's left side.
+
+It follows a continuous curved path toward the vocalist's front, gradually moving closer, without crossing through the microphone stand, instruments or other equipment.
+
+The band and studio architecture shift naturally in the background as the camera moves.
+
+
+FIRST FRAME / BLOCKING
+
+The shot opens on the vocalist at the microphone, seen from 45° off his left side in a medium shot, slightly right of center.
+
+His face, upper body and Gibson Les Paul are visible.
+
+He is already singing and strumming his guitar, looking straight ahead beyond the microphone.
+
+Four band members are present, with the vocalist sharp in the foreground and the other three softly blurred behind him.
+
+The camera is already moving gently along its curved path.
+
+
+FORMAT MODE
+
+One continuous cinematic handheld shot.
+
+The camera does not cut on its own.
+
+A single uninterrupted arc-in movement carries the shot from the opening medium shot to the final medium close-up.
+
+
+OPTICS
+
+29° field of view throughout the shot.
+
+Medium shot gradually transitioning to medium close-up through physical camera movement.
+
+Shallow depth of field, the vocalist sharply in focus, the band behind him softened into recognizable shapes and warm bokeh.
+
+Natural portrait compression.
+
+The focal length remains constant throughout the movement.
+
+
+CAMERA
+
+ONE CONTINUOUS ARC-IN — 7.68 SECONDS
+
+Approximately 0.0–1.35s — "그러니까"
+
+Handheld, 45° off the vocalist's left side, beginning in a medium shot.
+
+The camera is already moving in a gentle curved path around him.
+
+His face, upper body and actively played guitar remain visible.
+
+Approximately 1.35–3.45s — "걱정 말아요"
+
+The camera gradually accelerates along the same arc toward the vocalist's front.
+
+The band members, factory windows and industrial architecture shift naturally through visible background parallax.
+
+The vocalist remains the visual anchor.
+
+Approximately 3.45–5.80s — "나 잘 살아갈"
+
+The camera continues the uninterrupted arc toward a near-frontal position, gradually moving closer and lowering to chest height with a slight upward tilt.
+
+The framing tightens naturally as the camera approaches.
+
+From approximately 5.80s — "거예요"
+
+The camera smoothly decelerates and arrives at a near-frontal, slightly low-angle medium close-up.
+
+Once the camera has fully settled into the final composition, the vocalist shifts his gaze directly into the lens.
+
+The camera holds the final composition as he sustains the ending of the phrase.
+
+The entire movement follows one continuous, physically plausible curved path with smooth acceleration and deceleration.
+
+Refined handheld movement with a subtle natural sway. The horizon remains level.
+
+The camera stays on the audience side of the line between the microphone and the drum kit.
+
+The time markers are approximate guides; the sung phrases in <<<audio_1>>> are the primary timing anchors.
+
+
+ACTION
+
+0.0s to 7.68s — ONE CONTINUOUS SHOT
+
+Four band members: the vocalist <<<image_16>>> with <<<image_4>>> sharp in the foreground; the guitarist <<<image_13>>> with <<<image_6>>> on the left, the bassist <<<image_7>>> with <<<image_8>>> on the right, and the drummer <<<image_10>>> holding <<<image_11>>> behind the kit, all three soft in the background. The bassist's facial identity follows <<<image_9>>>. All four preserve their physical proportions from <<<image_12>>>.
+
+The vocalist sings into the microphone with natural, moderate mouth opening, his mouth shapes following <<<audio_1>>> exactly.
+
+He plays rhythm guitar throughout the entire shot, his right hand strumming on the beat while his left hand naturally changes chords. The band behind him keeps playing softly and steadily.
+
+"그러니까"
+
+He sings facing forward, his attention on the words he wants to tell his parents, his hands continuing to play the guitar.
+
+The camera moves gently around him from his left side.
+
+"걱정 말아요"
+
+He continues singing with quiet sincerity, looking ahead rather than following the moving camera.
+
+His hands keep strumming on the beat as the camera accelerates toward his front.
+
+"나 잘 살아갈"
+
+He delivers the words with growing conviction, still playing and singing naturally.
+
+The camera moves closer and lowers into a subtle low angle.
+
+"거예요"
+
+The camera completes its arc and settles into the near-frontal, slightly low-angle medium close-up.
+
+Only after the camera has stopped does he shift his gaze directly into the lens and hold it through the end of the phrase, his hands still strumming on the beat.
+
+All four band members continue their instrumental performance through the final frame.
+
+
+PERFORMANCE
+
+ACTING TASK — VOCALIST
+(He is fully invested in his tactic; the work happens in his eyes.)
+
+SCENE DIRECTION (shared, unspoken): today nobody cries; everyone keeps it bright and only shows that he is living well.
+
+MOTIVE (his fuel): he wants his late parents to stop worrying; today, on the birthday, he has come to tell them so.
+
+GOAL: to reassure his parents that he is doing well and promise them that he will continue living a good life.
+
+OBSTACLE: the promise is simple, but saying it sincerely after all these years is difficult.
+
+TACTIC: he sings toward the place where he imagines his parents listening. He gives the words time to mean something. When the camera finally reaches him, he looks into the lens and delivers the promise directly.
+
+Moment to moment:
+
+— "그러니까" — he begins the reassurance with quiet sincerity.
+
+— "걱정 말아요" — he sings gently, as if asking his parents to believe him.
+
+— "나 잘 살아갈" — his conviction grows naturally as he sings.
+
+— "거예요" — after the camera settles, he meets the lens and completes his promise.
+
+Natural, grounded, understated film acting; restraint throughout.
+
+His singing, guitar playing and subtle bodily rhythm happen together as one continuous live performance.
+
+Every reaction comes after its cause: he looks into the lens only after the camera has finished its movement.
+
+His gaze stays engaged in the task, never a frozen, glassy or unfocused stare; natural blink cadence. Dry eyes.
+
+
+ACTING TASK — GUITARIST, BASSIST, DRUMMER
+
+SCENE DIRECTION (shared, unspoken): keep it bright; carry him to the end of the song.
+
+GOAL: to give his words room.
+
+OBSTACLE: if they play over him, the sentence is lost.
+
+TACTIC: they play softly and steadily on every beat, hands moving, keeping a quiet musical foundation beneath his voice.
+
+The guitarist strums his Fender Stratocaster, the bassist plucks his Fender Precision Bass while fretting the notes, and the drummer plays the kit with one wooden drumstick in each hand.
+
+Their playing follows <<<audio_1>>>, with the energy carried naturally in their hands and forearms and small head movements on the beat.
+
+All four members keep playing throughout the shot.
+
+
+PHYSICS
+
+Still indoor air.
+
+The guitars hang with real weight on their straps; the strings vibrate naturally as they are played.
+
+The vocalist's strumming arm moves naturally with the rhythm while his other hand plays the fretboard.
+
+His body responds subtly to the music without disrupting his singing at the microphone.
+
+The drummer's sticks move with realistic weight, making natural contact with the drumheads and cymbals.
+
+The vocalist's chest fills before each phrase and slowly empties during the sustained final note.
+
+The camera moves through the physical studio space with natural parallax and consistent spatial relationships.
+
+
+LIGHTING
+
+The vocalist's face is keyed by large, soft overcast window light from the studio's left side, slightly above eye level.
+
+A soft loop-shaped shadow sits beside his nose, with gentle fill on the far cheek and clear catchlights in both eyes.
+
+His skin stays warm and natural, approximately 4500K, against the cool muted slate-blue studio interior.
+
+His face sits one to two stops brighter than the background.
+
+A thin soft rim of daylight separates his hair and shoulders from the background.
+
+The pendant lamps remain high above and behind the band as warm round bokeh, away from his face.
+
+As the camera arcs toward the front, the lighting remains physically consistent with the fixed studio windows.
+
+His eyes remain clearly visible in the final medium close-up.
+
+
+AUDIO
+
+<<<audio_1>>> drives the vocalist's lip-sync and the band's instrumental performance.
+
+The vocalist sings and plays rhythm guitar simultaneously, with his strumming following the rhythm of the music.
+
+The camera movement responds to the vocal phrasing, accelerating through "걱정 말아요" and settling during "거예요".
+
+
+STYLE
+
+Photoreal, refined cinematic 35mm film look matching the reference studio.
+
+Muted dusty slate-blue palette with warm natural skin and warm lamp accents.
+
+Fine film grain, gentle highlight halation on the windows, soft highlight roll-off.
+
+
+OUTPUT SETTINGS
+
+16:9, real-time speed throughout.
+
+One continuous shot, no internal cuts.
+
+
+POSITIVE LOCKS
+
+Exactly four band members occupy the studio: the vocalist in the foreground, the guitarist on the left, the bassist on the right and the drummer behind the kit.
+
+Faces, outfits and instruments match their respective references exactly.
+
+The drummer holds the two drumsticks from <<<image_11>>> throughout the performance.
+
+All four preserve their relative heights and body proportions from <<<image_12>>>.
+
+All four members keep playing from the first frame to the last, every strum and drum hit following the beat of <<<audio_1>>>.
+
+The vocalist sings while actively playing his Gibson Les Paul throughout the shot.
+
+His gaze is directed forward during the camera's arc, independent of the camera's movement.
+
+The camera travels in one continuous arc from the left-front 45° medium shot to the near-frontal, slightly low-angle medium close-up.
+
+Only after the camera has completed its movement and settled does the vocalist look directly into the lens.
+
+The microphone remains just in front of his mouth, with natural, moderate mouth opening while singing.
+
+Every face stays dry.
+
+The frame shows only the scene, clean of any lettering or captions.
