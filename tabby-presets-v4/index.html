@@ -75,6 +75,7 @@ h1{font-size:clamp(27px,3.7vw,43px);letter-spacing:-1.5px;margin:12px 0 10px;fon
 <label class="common-check"><input type="checkbox" id="ckNoEdits" checked/><span>8. 멋대로 편집하지 마</span></label>
 <label class="common-check"><input type="checkbox" id="ckG4Gaze"/><span>9. 미디엄 → MCU 전환 후 시선전환</span></label>
 <label class="common-check"><input type="checkbox" id="ckArtDirection"/><span>10. 사람처럼 만들어</span></label>
+<label class="common-check"><input type="checkbox" id="ckNaturalExpression"/><span>11. 표정 자연스럽게</span></label>
 </div>
 <div class="common-notes">실내와 야외는 동시에 선택되지 않습니다. 6~8번은 감정·연기·편집 제어용 선택 항목입니다. 공연 동작은 사용자가 마지막으로 전달한 PERFORMANCE 문장을 사용합니다.</div>
 <div class="preview-heading"><h3>선택한 공통값 미리보기</h3><span class="pill" id="commonCount">5개 선택</span></div>
@@ -178,7 +179,14 @@ const ART_DIRECTION=`
 A cohesive contemporary band editorial with understated confidence and relaxed, individual poses.
 
 No beauty-filter smoothing, no airbrushed, waxy or plastic skin, no CGI or illustrated appearance, no exaggerated HDR, and no artificial sharpening halos.`;
-function common(){return [["ckCharacter","CHARACTER REFERENCES",CHARACTERS],["ckOutdoor","OUTDOOR PHYSICS",OUTDOOR],["ckIndoor","INDOOR PHYSICS",INDOOR],["ckPerformance","PERFORMANCE",PERFORMANCE],["ckStageLayout","LOCATION MAP",STAGE_LAYOUT],["ckNoTears","NO CRYING",NO_TEARS],["ckNaturalActing","NATURAL ACTING",NATURAL_ACTING],["ckNoEdits","EDITING CONTROL",NO_EDITS],["ckG4Gaze","G4 GAZE TRANSITION",G4_GAZE],["ckArtDirection","ART DIRECTION",ART_DIRECTION]].filter(([id])=>$('#'+id).checked).map(([,title,txt])=>title+'\n'+txt).join('\n\n')}
+const NATURAL_EXPRESSION=`Facial expressions follow anatomically plausible facial muscle movement.
+
+Expression lines result from continuous, natural skin deformation driven by the underlying muscle contractions. They deepen and soften smoothly with the expression, remaining consistent with the skin’s texture and lighting.
+
+Keep the eyes, cheeks and mouth coordinated.
+
+No drawn-on wrinkle lines, sudden crease appearance or disappearance, or flickering wrinkle textures.`;
+function common(){return [["ckCharacter","CHARACTER REFERENCES",CHARACTERS],["ckOutdoor","OUTDOOR PHYSICS",OUTDOOR],["ckIndoor","INDOOR PHYSICS",INDOOR],["ckPerformance","PERFORMANCE",PERFORMANCE],["ckStageLayout","LOCATION MAP",STAGE_LAYOUT],["ckNoTears","NO CRYING",NO_TEARS],["ckNaturalActing","NATURAL ACTING",NATURAL_ACTING],["ckNoEdits","EDITING CONTROL",NO_EDITS],["ckG4Gaze","G4 GAZE TRANSITION",G4_GAZE],["ckArtDirection","ART DIRECTION",ART_DIRECTION],["ckNaturalExpression","FACIAL EXPRESSION",NATURAL_EXPRESSION]].filter(([id])=>$('#'+id).checked).map(([,title,txt])=>title+'\n'+txt).join('\n\n')}
 function combined(){const a=angle(),m=motion(),l=light();return [["OPTICS",a?.optic],["CAMERA",m?.camera],["LIGHTING",l?.light]].filter(x=>x[1]).map(([title,txt])=>title+'\n'+txt).concat(common()?[common()]:[]).join('\n\n')}
 function render(){const a=angle(),m=motion(),l=light();$('#angleOutput').textContent=a?a.optic:'선택 없음';$('#motionOutput').textContent=m?m.camera:'선택 없음';$('#lightOutput').textContent=l?l.light:'선택 없음';$('#angleSource').textContent=a?`출처: ${a.source} / ${a.label}`:'';$('#motionSource').textContent=m?`출처: ${m.source} / ${m.label}`:'';$('#lightSource').textContent=l?`출처: ${l.source} / ${l.label} · ${l.period}`:'';$('#commonPreview').textContent=common()||'선택된 공통값이 없습니다.';$('#commonCount').textContent=[...document.querySelectorAll('.common-check input:checked')].length+'개 선택';$('#combinedOutput').textContent=combined();let same=a&&m&&l&&a.camera===m.camera&&a.id===l.id;$('#combinationNote').textContent=(!a||!m||!l)?'각 항목을 선택하세요.':same?'동일한 원본 샷의 앵글·무빙·조명':'서로 다른 원본 조합 · 카메라/조명 충돌 가능';$('#allCopy').disabled=!a||!m||!l;$('#sameSource').disabled=!a||!motionByText.has(a.camera)}
 function useAngle(){if(!motionManuallyChanged){let a=angle();if(a){let m=motionByText.get(a.camera);if(m){motionId=m.id;$('#motionSearch').value='';filterMotions()}}}if(!lightManuallyChanged&&lightMap.has(angleId)){lightId=angleId;$('#lightSearch').value='';filterLights()}render()}
@@ -189,6 +197,7 @@ $('#ckOutdoor').addEventListener('change',e=>{if(e.target.checked)$('#ckIndoor')
 $('#ckIndoor').addEventListener('change',e=>{if(e.target.checked)$('#ckOutdoor').checked=false;render()});
 $('#ckCharacter').addEventListener('change',render);$('#ckPerformance').addEventListener('change',render);$('#ckStageLayout').addEventListener('change',render);$('#ckNoTears').addEventListener('change',render);$('#ckNaturalActing').addEventListener('change',render);$('#ckNoEdits').addEventListener('change',render);$('#ckG4Gaze').addEventListener('change',render);
 $('#ckArtDirection').addEventListener('change',render);
+$('#ckNaturalExpression').addEventListener('change',render);
 $('#angleCopy').addEventListener('click',()=>copy(angle()?.optic));$('#motionCopy').addEventListener('click',()=>copy(motion()?.camera));$('#lightCopy').addEventListener('click',()=>copy(light()?.light));
 $('#commonCopy').addEventListener('click',()=>copy(common()));$('#allCopy').addEventListener('click',()=>copy(combined()));
 $('#sameSource').addEventListener('click',()=>{let a=angle();if(!a)return;let m=motionByText.get(a.camera);if(m){motionId=m.id;motionManuallyChanged=false;$('#motionSearch').value='';filterMotions()}lightId=a.id;lightManuallyChanged=false;$('#lightSearch').value='';filterLights();render()});
